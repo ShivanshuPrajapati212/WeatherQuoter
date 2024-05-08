@@ -39,7 +39,7 @@
     </nav>
 
     <div class="container">
-        <h1 class="text-center fs-1 mt-3">Welcome to Weather Quoter</h1>
+        <h1 class="text-center fs-1 mt-3">Welcome to Weather Quoter <span>by Shivanshu Prajapati</span></h1>
         <form action="/current" method="post">{% csrf_token %}
             <div class="input-group flex-nowrap mt-5">
                 <span class="input-group-text" id="addon-wrapping">$</span>
@@ -62,7 +62,7 @@
                 <p class="fs-5"><strong>Temperature in Fahrenheit</strong>: {{Temperature_in_Fahrenheit}}&deg;</p>
                 <p class="fs-5"><strong>Wind Speed</strong>: {{Wind_Speed}} KPH</p>
                 <p class="fs-5"><strong>Humidity</strong>: {{Humidity}}%</p>
-                <p class="fs-5"><strong>For more results:</strong> <a href='{{ url }}'' class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Click Here</a></p>
+                <p class="fs-5"><strong>For more results:</strong> <a target="_blank" href='{{ url }}'' class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Click Here</a></p>
             </div>
         </div>
     </div>
